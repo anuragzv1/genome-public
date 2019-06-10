@@ -1,13 +1,13 @@
 {
   "DOMAIN": "bytescare.com",
-  "SUBDOMAIN": "new.example",
+  "SUBDOMAIN": "apple.example",
   "CHISEL_PORT": 8080,
   "RDP_PORT": 8001,
   "PASSWD": "pass1234",
   "LOCAL_CHISEL": "yes",
   "CONTAINER_NAME": "uxrdp-node",
-  "NODEJS_PORT": 9001,
-  "APP_REPO_LINK": "https://github.com/johnpapa/node-hello.git",
-  "APP_FILE": "index.js",
-  "APP_DIR_NAME": "node-hello-1"
+  "NODEJS_PORT": 3001,
+  "APP_REPO_LINK": "https://a266154c977f88d62e7c9b0302a775feb436230e:x-oauth-basic@github.com/vineetv2821993/scrape-heart",
+  "APP_FILE": "app.js",
+  "APP_DIR_NAME": "scrape-heart"
 }
