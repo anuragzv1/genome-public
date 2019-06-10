@@ -37,7 +37,7 @@ os.system("docker run -d --name "+name+" --hostname terminalserver --shm-size 1g
 cmd="docker exec -ti "+name+" /bin/bash -c \"echo -e \\\""+passwd+"\n"+passwd+"\n\n\n\\\" | (passwd ubuntu)\""
 os.system("docker exec uxrdp-node /bin/bash -c \" cd ~ && git clone "+appRepoLink+" "+appDir+"\"")  
  
-os.system("docker exec -ti "+name+" /bin/bash -c \"cd ~/"+appDir+"/ && pm2 start "+appFile+"\"")
+os.system("docker exec -ti "+name+" /bin/bash -c \"cd ~/"+appDir+"/ && npm install && pm2 start "+appFile+"\"")
 os.system(cmd)
 
 if(local=="yes"):
