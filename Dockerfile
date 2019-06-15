@@ -69,8 +69,6 @@ RUN apt update && apt -y full-upgrade && apt install -y \
   xrdp \
   curl\  
   $ADDITIONAL_PACKAGES \
-  
-  && \
   rm -rf /var/cache/apt /var/lib/apt/lists && \
   mkdir -p /var/lib/xrdp-pulseaudio-installer
 RUN echo inside
