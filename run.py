@@ -41,5 +41,6 @@ os.system("docker exec -ti "+name+" /bin/bash -c \"cd ~/"+appDir+"/ && npm insta
 os.system(cmd)
 
 if(local=="yes"):
-    os.system("docker exec "+name+" /bin/bash -c \"chisel client http://"+subdomain+"."+domain+":"+hostport+" R:"+str(port)+":localhost:3389 R:"+str(nodejsPort)+":localhost:3000\"")
+        os.system("docker exec "+name+" /bin/bash -c \"chisel client http://"+subdomain+"."+domain+":"+hostport+" R:"+str(port)+":localhost:3389 R:"+str(nodejsPort)+":localhost:"+str(nodejsPort)+"\"")
+
 	
