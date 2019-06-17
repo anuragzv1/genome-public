@@ -69,8 +69,10 @@ RUN apt update && apt -y full-upgrade && apt install -y \
   xrdp \
   curl\  
   $ADDITIONAL_PACKAGES \
+  && \
   rm -rf /var/cache/apt /var/lib/apt/lists && \
   mkdir -p /var/lib/xrdp-pulseaudio-installer
+  
 RUN echo inside
 COPY --from=builder /tmp/so/module-xrdp-source.so /var/lib/xrdp-pulseaudio-installer
 COPY --from=builder /tmp/so/module-xrdp-sink.so /var/lib/xrdp-pulseaudio-installer
