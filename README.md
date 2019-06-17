@@ -59,7 +59,13 @@ How to use:
 	Run on the server:
 		$ chisel server --reverse
 
-Run the run.py file
+1. Run the install.py file
+```
+$python3 install.py
+```
+
+
+2. Run the run.py file
 	
 	$ python3 run.py
 
@@ -92,3 +98,7 @@ Directories and Files:
 	- stop.py:
 		Python script to stop running container	
 	
+Everytime to kill the running containers use:
+```
+Python3 stop.py
+```
